@@ -19,10 +19,17 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "react-hooks"
     ],
     "rules": {
-        "semi": ["error", "never"],
+        "semi": [
+            "error",
+            "never"
+        ],
+        "react/prop-types": "off",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "error",
         "react/jsx-filename-extension": [
             "error",
             {
