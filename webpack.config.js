@@ -5,7 +5,7 @@ const path = require("path")
 
 module.exports = (argv = {}) => ({
     entry: {
-        bundle: "./src/index.js"
+        bundle: "./src/index.tsx"
     },
     output: {
         path: path.resolve(__dirname, "dist"),
@@ -14,6 +14,13 @@ module.exports = (argv = {}) => ({
     },
     module: {
         rules: [
+            { 
+                test: /\.tsx?$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "ts-loader"
+                }
+            },
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
@@ -83,7 +90,7 @@ module.exports = (argv = {}) => ({
         })
     ],
     resolve: {
-        extensions: [".js"],
+        extensions: [".ts", ".tsx",".js"],
         alias: {
             actions: path.resolve(__dirname, "./src/actions/"),
             reducers: path.resolve(__dirname, "./src/reducers/"),
