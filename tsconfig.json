@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "esModuleInterop": true, // can import React from 'react' instead of import * as React ...
+      "outDir": "./dist/",
+      "sourceMap": true,
+      "noImplicitAny": false,
+      "module": "commonjs",
+      "target": "es5",
+      "jsx": "react"
+    },
+    "include": [
+        "src/**/*" // *** The files TypeScript should type check ***
+      ],
+      "exclude": ["node_modules", "dist"] // *** The files to not type check ***
+  }
