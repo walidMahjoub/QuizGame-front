@@ -2,9 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-import Message from "./Message"
+import Message from './Message'
 import AppJs from './App'
-import HooksTs from './HooksTs';
+import HooksTs from './HooksTs'
 
 ReactDOM.render(
     <Router>
@@ -17,4 +17,4 @@ ReactDOM.render(
         <Route exact path="/hooksTs" component={HooksTs} />
     </Router>,
     document.getElementById('root')
-);
+)
