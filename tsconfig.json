@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+      "esModuleInterop": true, // can import React from 'react' instead of import * as React ...
       "outDir": "./dist/",
       "sourceMap": true,
       "noImplicitAny": false,
