@@ -1,5 +1,4 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Hello from './Hello';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-ReactDOM.render(<Hello />, document.getElementById('root'));
+ReactDOM.render(<h1>Hello Quiz game</h1>, document.getElementById('root'))
